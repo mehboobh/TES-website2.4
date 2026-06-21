@@ -1,27 +1,31 @@
 import { useState } from "react";
 import { useDocumentMeta } from "@/hooks/use-document-meta";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
+import * as z from "zod/v4";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { CheckCircle2, MessageSquare, HelpCircle } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Check } from "lucide-react";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "Name is required." }),
-  email: z.string().email({ message: "Valid email is required." }),
-  message: z.string().min(10, { message: "Please provide more details." }),
+  email: z.string().email({ message: "Valid work email is required." }),
+  message: z.string().min(10, { message: "Please provide more detail." }),
 });
+
+const faqs = [
+  { q: "Do you work with single-truck operators?", a: "Yes. Built specifically for owner-operators and small fleets." },
+  { q: "Do you cover Canada and the US?", a: "Yes. DOT, MC, NSC, CVOR, and cross-border operations." },
+  { q: "How fast do you respond?", a: "Within 1 business day, personally." },
+];
 
 export default function Contact() {
   useDocumentMeta(
-    "Contact", 
+    "Contact — TruckEase",
     "Have a question about fleet compliance or how TruckEase works? Reach out and a real person responds within 1 business day."
   );
 
@@ -29,163 +33,130 @@ export default function Contact() {
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullName: "",
-      email: "",
-      message: "",
-    },
+    defaultValues: { fullName: "", email: "", message: "" },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  function onSubmit(_values: z.infer<typeof formSchema>) {
     setIsSubmitted(true);
   }
 
+  const inputClass = "h-12 rounded-xl border-border focus:border-secondary focus:ring-2 focus:ring-secondary/20 bg-white text-sm font-medium transition-all";
+
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10 max-w-4xl text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
-          >
+      {/* HERO */}
+      <section className="relative bg-[hsl(220,63%,13%)] py-32 overflow-hidden">
+        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none" aria-hidden>
+          <svg viewBox="0 0 600 600" fill="none" className="absolute right-[-80px] top-[15%] w-[520px] opacity-[0.05]">
+            <rect x="0" y="0" width="520" height="36" rx="18" fill="white"/>
+            <rect x="60" y="90" width="440" height="36" rx="18" fill="white"/>
+            <rect x="0" y="180" width="520" height="36" rx="18" fill="white"/>
+            <rect x="120" y="270" width="360" height="36" rx="18" fill="white"/>
+          </svg>
+        </div>
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+          <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-xs font-bold tracking-[0.18em] uppercase text-secondary mb-6">Contact</motion.p>
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] max-w-3xl mb-6">
             A Real Person Will Get Back to You
           </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xl text-primary-foreground/80"
-          >
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-lg text-white/60 font-medium max-w-lg leading-relaxed">
             Question, specific compliance issue, or just want to know how TruckEase works — reach out. No sales pitch. Just answers.
           </motion.p>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-6xl">
+      {/* FORM + FAQS */}
+      <section className="py-24 md:py-32 bg-[hsl(220,20%,96%)]">
+        <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16">
-            
-            {/* Left Column: Quick Answers */}
-            <div>
-              <div className="mb-10">
-                <h2 className="text-3xl font-bold mb-8 text-primary flex items-center gap-3">
-                  <HelpCircle className="h-8 w-8 text-secondary" />
-                  Quick Answers
-                </h2>
-                <div className="space-y-6">
-                  <div className="bg-muted p-6 rounded-xl border border-border/50">
-                    <h3 className="font-bold text-lg mb-2">Do you work with single-truck operators?</h3>
-                    <p className="text-muted-foreground">Yes. Built specifically for owner-operators and small fleets.</p>
-                  </div>
-                  <div className="bg-muted p-6 rounded-xl border border-border/50">
-                    <h3 className="font-bold text-lg mb-2">Do you cover Canada and the US?</h3>
-                    <p className="text-muted-foreground">Yes. DOT, MC, NSC, CVOR, and cross-border operations.</p>
-                  </div>
-                  <div className="bg-muted p-6 rounded-xl border border-border/50">
-                    <h3 className="font-bold text-lg mb-2">How fast do you respond?</h3>
-                    <p className="text-muted-foreground">Within 1 business day, personally.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            {/* Right Column: Form */}
-            <div>
-              <Card className="shadow-lg border-primary/10">
-                <CardContent className="p-8">
+            {/* Quick Answers */}
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+              <p className="text-xs font-bold tracking-[0.18em] uppercase text-secondary mb-8">Quick Answers</p>
+              <div className="space-y-6">
+                {faqs.map((faq, i) => (
+                  <div key={i} className="bg-white rounded-2xl p-7">
+                    <h3 className="text-base font-bold text-foreground mb-2">{faq.q}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed font-medium">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Form */}
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+              <div className="bg-white rounded-2xl shadow-lg p-10">
+                <AnimatePresence mode="wait">
                   {isSubmitted ? (
-                    <motion.div 
+                    <motion.div
+                      key="success"
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
                       className="text-center py-12"
                     >
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-600 mb-6">
-                        <MessageSquare className="h-8 w-8" />
+                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 mb-6">
+                        <Check className="h-8 w-8 text-emerald-600" />
                       </div>
-                      <h3 className="text-2xl font-bold mb-4 text-primary">Message Received</h3>
-                      <p className="text-muted-foreground text-lg">
-                        Message received. A real person will respond within 1 business day.
+                      <h3 className="text-2xl font-bold text-foreground mb-3">Message Received</h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        A real person will respond within 1 business day.
                       </p>
                     </motion.div>
                   ) : (
-                    <Form {...form}>
-                      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                        <FormField
-                          control={form.control}
-                          name="fullName"
-                          render={({ field }) => (
+                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                      <h2 className="text-2xl font-bold text-foreground mb-8">Send a Message</h2>
+                      <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                          <FormField control={form.control} name="fullName" render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-base font-semibold">Full Name</FormLabel>
+                              <FormLabel className="text-sm font-bold text-foreground">Full Name</FormLabel>
+                              <FormControl><Input placeholder="John Doe" className={inputClass} {...field} data-testid="input-contact-fullname" /></FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )} />
+                          <FormField control={form.control} name="email" render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-sm font-bold text-foreground">Work Email</FormLabel>
+                              <FormControl><Input type="email" placeholder="john@example.com" className={inputClass} {...field} data-testid="input-contact-email" /></FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )} />
+                          <FormField control={form.control} name="message" render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-sm font-bold text-foreground">Message</FormLabel>
                               <FormControl>
-                                <Input placeholder="John Doe" className="h-12" {...field} data-testid="input-contact-fullname" />
+                                <Textarea placeholder="How can we help?" className="min-h-[130px] rounded-xl resize-none border-border focus:border-secondary text-sm font-medium" {...field} data-testid="textarea-contact-message" />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="email"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-base font-semibold">Work Email</FormLabel>
-                              <FormControl>
-                                <Input type="email" placeholder="john@example.com" className="h-12" {...field} data-testid="input-contact-email" />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="message"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-base font-semibold">Message</FormLabel>
-                              <FormControl>
-                                <Textarea 
-                                  placeholder="How can we help?" 
-                                  className="min-h-[150px] resize-none" 
-                                  {...field} 
-                                  data-testid="textarea-contact-message"
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <div className="pt-4">
-                          <Button type="submit" className="w-full h-14 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground" data-testid="button-submit-contact">
-                            Send Message
-                          </Button>
-                          <p className="text-center text-sm text-muted-foreground mt-4">
-                            We respond to every message personally.
-                          </p>
-                        </div>
-                      </form>
-                    </Form>
+                          )} />
+                          <div className="pt-2">
+                            <button type="submit" className="w-full py-4 bg-secondary text-white font-bold text-base rounded-full hover:bg-secondary/90 transition-all duration-200 hover:shadow-lg hover:shadow-secondary/20" data-testid="button-submit-contact">
+                              Send Message
+                            </button>
+                            <p className="text-center text-xs text-muted-foreground mt-4 font-medium">
+                              We respond to every message personally.
+                            </p>
+                          </div>
+                        </form>
+                      </Form>
+                    </motion.div>
                   )}
-                </CardContent>
-              </Card>
-            </div>
-            
+                </AnimatePresence>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Bottom CTA section */}
-      <section className="py-20 bg-muted/50 border-t text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6">Not ready? Start with the free review instead.</h2>
+      {/* BOTTOM CTA */}
+      <section className="py-20 bg-white border-t border-border text-center">
+        <div className="container mx-auto px-6 max-w-xl">
+          <p className="text-lg font-medium text-muted-foreground mb-6">Not ready? Start with the free review instead.</p>
           <Link href="/free-review" data-testid="contact-bottom-cta">
-            <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-8 py-6 h-auto font-bold rounded-md shadow-sm">
+            <button className="bg-secondary text-white font-bold text-base px-8 py-4 rounded-full hover:bg-secondary/90 transition-all duration-200 hover:shadow-lg hover:shadow-secondary/20">
               Get My Free Fleet Review
-            </Button>
+            </button>
           </Link>
         </div>
       </section>
