@@ -39,8 +39,9 @@ export default function FreeReview() {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative bg-[hsl(220,63%,13%)] py-32 overflow-hidden">
-        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none" aria-hidden>
+      <section className="relative bg-[url('/hero-bg.jpg')] bg-cover bg-center py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-[hsl(220,63%,10%)]/80" />
+        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none z-10" aria-hidden>
           <svg viewBox="0 0 600 600" fill="none" className="absolute right-[-80px] top-[15%] w-[520px] opacity-[0.05]">
             <rect x="0" y="0" width="520" height="36" rx="18" fill="white"/>
             <rect x="60" y="90" width="440" height="36" rx="18" fill="white"/>

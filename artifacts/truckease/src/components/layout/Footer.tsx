@@ -7,16 +7,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
           {/* Brand */}
           <div className="md:col-span-5 lg:col-span-6">
-            <Link href="/" className="flex items-center gap-2.5 mb-6" data-testid="footer-link-logo">
-              <div className="flex flex-col gap-[3px]">
-                <div className="w-8 h-[5px] rounded-full bg-secondary" />
-                <div className="w-5 h-[5px] rounded-full bg-secondary" />
-                <div className="w-8 h-[5px] rounded-full bg-secondary" />
-              </div>
-              <span className="font-bold text-xl tracking-tight text-white">TruckEase</span>
+            <Link href="/" className="flex items-center mb-6" data-testid="footer-link-logo">
+              <img
+                src="/truckease-logo.png"
+                alt="TruckEase Solutions"
+                className="h-10 w-auto brightness-0 invert"
+              />
             </Link>
-            <p className="text-white/55 text-sm leading-[1.85] max-w-sm font-medium">
-              Small carriers face the same compliance pressure as enterprise fleets — just without the team, tools, or time to manage it all. TruckEase gives owner-operators and small fleets a clearer way to stay on top of it — simple, structured, and built around real trucks running real routes across Canada and the United States.
+            <p className="text-white/55 text-base leading-relaxed font-semibold tracking-wide">
+              Stay compliant - Stay moving
             </p>
           </div>
 

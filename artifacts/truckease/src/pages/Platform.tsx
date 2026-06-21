@@ -1,3 +1,4 @@
+import React from "react";
 import { useDocumentMeta } from "@/hooks/use-document-meta";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
@@ -35,8 +36,9 @@ export default function Platform() {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative bg-[hsl(220,63%,13%)] py-32 overflow-hidden">
-        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none" aria-hidden>
+      <section className="relative bg-[url('/hero-bg.jpg')] bg-cover bg-center py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-[hsl(220,63%,10%)]/80" />
+        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none z-10" aria-hidden>
           <svg viewBox="0 0 600 600" fill="none" className="absolute right-[-80px] top-[15%] w-[520px] opacity-[0.05]">
             <rect x="0" y="0" width="520" height="36" rx="18" fill="white"/>
             <rect x="60" y="90" width="440" height="36" rx="18" fill="white"/>
@@ -99,20 +101,20 @@ export default function Platform() {
             </div>
             {/* Rows */}
             {beforeAfter.map((row, i) => (
-              <>
-                <div key={`before-${i}`} className={`px-8 py-5 flex items-center gap-3 ${i < beforeAfter.length - 1 ? "border-b border-border" : ""}`}>
+              <React.Fragment key={i}>
+                <div className={`px-8 py-5 flex items-center gap-3 ${i < beforeAfter.length - 1 ? "border-b border-border" : ""}`}>
                   <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center shrink-0">
                     <X className="h-3 w-3 text-red-400" />
                   </div>
                   <span className="text-muted-foreground text-sm font-medium line-through decoration-red-300">{row.before}</span>
                 </div>
-                <div key={`after-${i}`} className={`px-8 py-5 flex items-center gap-3 border-l border-border ${i < beforeAfter.length - 1 ? "border-b" : ""}`}>
+                <div className={`px-8 py-5 flex items-center gap-3 border-l border-border ${i < beforeAfter.length - 1 ? "border-b" : ""}`}>
                   <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
                     <Check className="h-3 w-3 text-emerald-600" />
                   </div>
                   <span className="text-foreground text-sm font-bold">{row.after}</span>
                 </div>
-              </>
+              </React.Fragment>
             ))}
           </div>
 

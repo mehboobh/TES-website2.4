@@ -22,9 +22,11 @@ export default function Home() {
   return (
     <Layout>
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-screen bg-[hsl(220,63%,13%)] flex items-center overflow-hidden">
+      <section className="relative min-h-screen bg-[url('/hero-bg.jpg')] bg-cover bg-center flex items-center overflow-hidden">
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-[hsl(220,63%,10%)]/80" />
         {/* Abstract geometric background */}
-        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none select-none" aria-hidden>
+        <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none select-none z-10" aria-hidden>
           <svg viewBox="0 0 600 800" fill="none" className="absolute right-[-100px] top-[10%] w-[580px] opacity-[0.045]">
             <rect x="0" y="0" width="520" height="40" rx="20" fill="white"/>
             <rect x="80" y="100" width="440" height="40" rx="20" fill="white"/>

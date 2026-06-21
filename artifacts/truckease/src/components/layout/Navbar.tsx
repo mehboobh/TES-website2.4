@@ -41,17 +41,12 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-7xl h-18 flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group" data-testid="link-home-logo">
-          <div className="flex flex-col gap-[3px]">
-            <div className="w-8 h-[5px] rounded-full bg-secondary" />
-            <div className="w-5 h-[5px] rounded-full bg-secondary" />
-            <div className="w-8 h-[5px] rounded-full bg-secondary" />
-          </div>
-          <span className={`font-bold text-xl tracking-tight transition-colors ${
-            isLight ? "text-foreground" : "text-white"
-          }`}>
-            TruckEase
-          </span>
+        <Link href="/" className="flex items-center" data-testid="link-home-logo">
+          <img
+            src="/truckease-logo.png"
+            alt="TruckEase Solutions"
+            className={`h-10 w-auto transition-all duration-300 ${isLight ? "" : "brightness-0 invert"}`}
+          />
         </Link>
 
         {/* Desktop Nav */}
