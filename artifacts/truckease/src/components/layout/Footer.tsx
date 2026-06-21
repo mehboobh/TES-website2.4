@@ -21,7 +21,7 @@ export function Footer() {
               Keeping compliance organized for real trucking operations.
             </p>
             <p className="text-white/45 text-sm leading-[1.8] font-medium max-w-sm mb-8">
-              TruckEase helps owner-operators and small fleets stay organized, track renewals, and reduce missed deadlines.
+              TruckEase helps owner-operators and small fleets stay organized, track renewals, and catch issues before they become problems.
             </p>
             <Link href="/free-review" data-testid="footer-cta-review">
               <button className="bg-secondary text-white text-sm font-bold px-6 py-3 rounded-full hover:bg-secondary/90 transition-all duration-200 hover:shadow-lg hover:shadow-secondary/25 hover:-translate-y-0.5">
@@ -48,20 +48,24 @@ export function Footer() {
             <p className="text-sm font-semibold text-white/70 mb-4">
               Serving Canada and the United States
             </p>
-            <div className="space-y-2 text-sm font-medium text-white/45">
-              <p>DOT · MC · NSC · CVOR</p>
-              <p>Cross-border operations</p>
-              <p>IFTA · IRP · Highway permits</p>
-            </div>
-            <div className="mt-8 pt-6 border-t border-white/10">
-              <p className="text-xs font-bold tracking-[0.12em] uppercase text-white/30 mb-3">Get in touch</p>
+            <div className="space-y-2 text-sm font-medium text-white/45 mb-8">
               <a
                 href="mailto:support@truckeasesolutions.com"
-                className="text-sm text-white/55 hover:text-secondary transition-colors duration-200 font-medium"
+                className="block hover:text-secondary transition-colors duration-200"
                 data-testid="footer-link-email"
               >
                 support@truckeasesolutions.com
               </a>
+              <p>Response hours: 8:00 AM to 6:00 PM EST</p>
+            </div>
+            <div className="pt-6 border-t border-white/10">
+              <p className="text-xs font-bold tracking-[0.12em] uppercase text-white/30 mb-3">Legal</p>
+              <ul className="space-y-2.5 text-sm font-medium text-white/45">
+                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Privacy Policy</span></li>
+                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Terms of Service</span></li>
+                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Legal Disclaimer</span></li>
+                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Cookie Policy</span></li>
+              </ul>
             </div>
           </div>
 
@@ -69,7 +73,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 font-medium">
-          <p>© 2025 TruckEase Solutions Inc. All rights reserved.</p>
+          <p>© 2026 TruckEase Solutions Inc. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <span className="hover:text-white/50 cursor-pointer transition-colors">Privacy Policy</span>
             <span className="text-white/15">·</span>
