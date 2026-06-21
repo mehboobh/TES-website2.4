@@ -10,6 +10,10 @@ import Services from "@/pages/Services";
 import About from "@/pages/About";
 import FreeReview from "@/pages/FreeReview";
 import Contact from "@/pages/Contact";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
+import LegalDisclaimer from "@/pages/LegalDisclaimer";
+import CookiePolicy from "@/pages/CookiePolicy";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -23,6 +27,10 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/free-review" component={FreeReview} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/legal-disclaimer" component={LegalDisclaimer} />
+      <Route path="/cookie-policy" component={CookiePolicy} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -58,15 +58,6 @@ export function Footer() {
               </a>
               <p>Response hours: 8:00 AM to 6:00 PM EST</p>
             </div>
-            <div className="pt-6 border-t border-white/10">
-              <p className="text-xs font-bold tracking-[0.12em] uppercase text-white/30 mb-3">Legal</p>
-              <ul className="space-y-2.5 text-sm font-medium text-white/45">
-                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Privacy Policy</span></li>
-                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Terms of Service</span></li>
-                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Legal Disclaimer</span></li>
-                <li><span className="hover:text-secondary cursor-pointer transition-colors duration-200">Cookie Policy</span></li>
-              </ul>
-            </div>
           </div>
 
         </div>
@@ -75,13 +66,13 @@ export function Footer() {
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 font-medium">
           <p>© 2026 TruckEase Solutions Inc. All rights reserved.</p>
           <div className="flex items-center gap-5">
-            <span className="hover:text-white/50 cursor-pointer transition-colors">Privacy Policy</span>
+            <Link href="/privacy-policy" className="hover:text-white/50 transition-colors">Privacy Policy</Link>
             <span className="text-white/15">·</span>
-            <span className="hover:text-white/50 cursor-pointer transition-colors">Terms of Service</span>
+            <Link href="/terms-of-service" className="hover:text-white/50 transition-colors">Terms of Service</Link>
             <span className="text-white/15">·</span>
-            <span className="hover:text-white/50 cursor-pointer transition-colors">Legal Disclaimer</span>
+            <Link href="/legal-disclaimer" className="hover:text-white/50 transition-colors">Legal Disclaimer</Link>
             <span className="text-white/15">·</span>
-            <span className="hover:text-white/50 cursor-pointer transition-colors">Cookie Policy</span>
+            <Link href="/cookie-policy" className="hover:text-white/50 transition-colors">Cookie Policy</Link>
           </div>
         </div>
 
