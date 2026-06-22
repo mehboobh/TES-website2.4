@@ -1,0 +1,120 @@
+Build a modern, professional multi-page website for "TruckEase" — a compliance and fleet management platform for owner-operators and small trucking fleets across Canada and the United States.
+
+Create these 6 pages: HOME, PLATFORM, SERVICES, ABOUT, FREE REVIEW, and CONTACT.
+
+Use a clean, trustworthy design with:
+- Primary color: Deep blue (trust, professional)
+- Secondary color: Orange or green (action, compliance success)
+- Font: Inter or similar clean sans-serif
+- Responsive layout for mobile and desktop
+
+For EACH page, implement the exact content provided below (headlines, subheadlines, body text, CTAs, meta descriptions, trust signals, form fields, etc.).
+
+Page structure:
+- Header with logo "TruckEase" and navigation links to all 6 pages
+- Footer with copyright, quick links, and contact info
+- Each page has its own unique headline, subheadline, content sections, and CTA button "Get My Free Fleet Review" (except FREE REVIEW page which has "Send My Review Request" and CONTACT which has "Send Message")
+
+FREE REVIEW page must include a form with fields:
+- Full Name
+- Work Email
+- DOT / MC / NSC / CVOR Number
+- "What do you haul and where do you run?" (textarea)
+- Submit button: "Send My Review Request"
+- Microcopy: "Active operations only. Results within 1 business day."
+
+CONTACT page must include:
+- Form with: Full Name, Work Email, Message
+- Submit button: "Send Message"
+- Quick answers section with 3 Q&As (provided in content)
+- Microcopy: "We respond to every message personally."
+- Bottom CTA: "Not ready? Start with the free review instead." + "Get My Free Fleet Review"
+
+Use semantic HTML, CSS with Tailwind or custom styles, and simple JavaScript for form handling (no backend needed yet — just frontend).
+
+Make sure every page includes its meta description in the <head> section.
+
+The overall tone should be professional, trustworthy, and focused on solving compliance headaches for small carriers.
+
+Here is the complete content for each page:
+
+[HOME PAGE CONTENT]
+Headline: Run Your Fleet — We'll Handle the Rest
+Subheadline: Compliance, documents, renewals, and records. Organized. Tracked. Under control.
+The Problem: Most carriers don't lose their authority because of bad driving. They lose it because of a missed filing. An expired permit. A document that wasn't where it needed to be. TruckEase fixes that.
+What We Do: One system that tracks your compliance status, organizes your documents, and keeps your renewals current — across Canada and the United States.
+  • Compliance status across all trucks and drivers
+  • Documents organized and audit-ready
+  • Renewals tracked before they become emergencies
+  • Maintenance and inspection records in one place
+Who It's For: Owner-operators and small fleet managers who are running the business and driving the truck at the same time. TruckEase is built for operators who can't afford to miss anything — and don't have a compliance team to catch it.
+Trust Signal: Currently working with pilot carriers across Canada and the US.
+CTA: Get My Free Fleet Review (Free. No commitment. Active operations only.)
+Meta Description: TruckEase helps owner-operators and small fleets manage trucking compliance, renewals, and records in one place. Get your free fleet compliance review today.
+
+[PLATFORM PAGE CONTENT]
+Headline: One System. Full Visibility. Nothing Missed.
+Subheadline: TruckEase replaces scattered spreadsheets and missed reminders with a single compliance platform built for real trucking operations.
+What TruckEase Tracks:
+  • Compliance & Regulatory Status: Know exactly where every vehicle and driver stands. No digging. No guessing.
+  • Document Organization: Every permit, filing, and inspection record — stored, organized, and audit-ready.
+  • Renewal Tracking: IRP, IFTA, insurance, licenses. Tracked before they become urgent.
+  • Maintenance & Inspection Records: Complete history per vehicle. Nothing lost between repair shops.
+Before/After Table:
+  Before → After
+  • Renewals tracked by memory → Clear timeline, nothing missed
+  • Documents scattered → Every record organized
+  • Issues found too late → Problems visible early
+  • Compliance status unknown → Full visibility across fleet
+Direction: The longer you use TruckEase, the more useful your data becomes. Patterns across maintenance records, compliance gaps, and operational history begin to surface — giving you a clearer picture of your fleet over time.
+CTA: Get My Free Fleet Review (No credit card. No commitment.)
+Meta Description: See how TruckEase centralizes fleet compliance records, renewals, and documents into one clear dashboard for Canadian and US trucking operations.
+
+[SERVICES PAGE CONTENT]
+Headline: The Compliance Work You Don't Have Time For — Handled
+Subheadline: Filings, permits, driver records, and renewals taken off your plate entirely.
+Services:
+  • Compliance & Filings: A missed filing can suspend your authority. We keep your regulatory obligations current so you're never caught off guard.
+  • Permits & Licensing: IRP, vehicle registration, specialty permits, and renewals — handled so your trucks stay legal wherever they operate.
+  • Fuel & Highway Tax Filings: IFTA, fuel tax, and highway use filings handled accurately and on time, every quarter.
+  • Driver Records: Driver qualification files organized, current, and audit-ready at all times.
+  • Operational Administration: Document organization, renewal tracking, and filing coordination — so your operation runs on a system, not memory.
+Trust Signal: Pilot clients across Canada and the United States are using TruckEase to reduce admin time and close compliance gaps.
+CTA: Get My Free Fleet Review (Active operations only. Response within 1 business day.)
+Meta Description: TruckEase handles DOT filings, IFTA, IRP, permits, and driver records for owner-operators and small fleets across Canada and the US.
+
+[ABOUT PAGE CONTENT]
+Headline: Built From Seeing How Things Actually Break
+Subheadline: TruckEase exists because small carriers carry the same compliance burden as large fleets — without the staff or systems to manage it.
+Body: Owner-operators running 1 to 10 trucks face the same regulatory requirements as enterprise fleets. But without a compliance team, that burden falls entirely on the person also driving the truck. The result is predictable. Documents fall through the cracks. Renewals get missed. Compliance gaps build quietly until they become expensive problems. TruckEase was built to change that — giving small carriers structured visibility and control over the parts of their operation that usually fall through the cracks. No unnecessary complexity. No overclaiming. Just a system that works. We work directly with pilot operators across Canada and the United States — owner-operators and small fleet managers running real trucks on real routes.
+CTA: Get My Free Fleet Review (For active Canadian and US trucking operations.)
+Meta Description: TruckEase was built because small carriers deserve the same operational control as large fleets. Learn why we exist and how we work.
+
+[FREE REVIEW PAGE CONTENT]
+Headline: Find Out Exactly Where Your Fleet Stands — Free
+Subheadline: We review your compliance profile and tell you what's current, what's missing, and what needs attention.
+What We Check:
+  • Safety and roadside profile
+  • Operating authority status
+  • Filing and regulatory standing
+  • Canadian compliance indicators where applicable
+Form fields: Full Name, Work Email, DOT / MC / NSC / CVOR Number, "What do you haul and where do you run?"
+Submit Button: Send My Review Request
+Microcopy: Active operations only. Results within 1 business day.
+Meta Description: Get a free review of your fleet's compliance standing — DOT, authority status, filings, and more. Built for owner-operators and small carriers in Canada and the US.
+
+[CONTACT PAGE CONTENT]
+Headline: A Real Person Will Get Back to You
+Subheadline: Question, specific compliance issue, or just want to know how TruckEase works — reach out. No sales pitch. Just answers.
+Quick Answers:
+  • Do you work with single-truck operators? Yes. Built specifically for owner-operators and small fleets.
+  • Do you cover Canada and the US? Yes. DOT, MC, NSC, CVOR, and cross-border operations.
+  • How fast do you respond? Within 1 business day, personally.
+Form fields: Full Name, Work Email, Message
+Submit Button: Send Message
+Microcopy: We respond to every message personally.
+Bottom CTA: Not ready? Start with the free review instead. → Get My Free Fleet Review
+Meta Description: Have a question about fleet compliance or how TruckEase works? Reach out and a real person responds within 1 business day.
+
+Use this tagline at the bottom of the homepage or footer:
+"Small carriers face the same compliance pressure as enterprise fleets — just without the team, tools, or time to manage it all. That's where things break: missed renewals, scattered records, and gaps that stay hidden until they become expensive. TruckEase gives owner-operators and small fleets a clearer way to stay on top of it — simple, structured, and built around real trucks running real routes across Canada and the United States."
