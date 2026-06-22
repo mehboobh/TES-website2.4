@@ -45,10 +45,10 @@ export function Footer() {
           {/* Right — Coverage */}
           <div className="md:col-span-4">
             <h4 className="text-xs font-bold tracking-[0.14em] uppercase text-white/40 mb-6">Coverage</h4>
-            <p className="text-sm font-semibold text-white/70 mb-4">
+            <p className="text-sm font-semibold text-white/70 mb-6">
               Serving Canada and the United States
             </p>
-            <div className="space-y-2 text-sm font-medium text-white/45 mb-8">
+            <div className="space-y-2 text-sm font-medium text-white/45 mb-8 pt-4 border-t border-white/10">
               <a
                 href="mailto:support@truckeasesolutions.com"
                 className="block hover:text-secondary transition-colors duration-200"

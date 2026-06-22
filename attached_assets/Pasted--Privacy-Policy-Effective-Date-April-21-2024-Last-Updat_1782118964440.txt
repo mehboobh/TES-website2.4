@@ -1,0 +1,439 @@
+# Privacy Policy
+
+**Effective Date:** April 21, 2024  
+**Last Updated:** June 21, 2026
+
+TruckEase Solutions Inc. ("TruckEase", "we", "our", or "us") operates the TruckEase platform, website, and related compliance tracking services for owner-operators and trucking fleets operating in Canada and the United States.
+
+We are committed to protecting your privacy and handling your personal information in a transparent, secure, and responsible manner. This Privacy Policy explains what information we collect, how we use it, how we protect it, and the rights available to you under applicable privacy laws, including Canada's Personal Information Protection and Electronic Documents Act (PIPEDA), the California Consumer Privacy Act (CCPA/CPRA), and other applicable laws.
+
+By accessing or using our website, platform, or services, you consent to the practices described in this Privacy Policy.
+
+***
+
+# 1. Privacy Officer
+
+TruckEase Solutions Inc. has designated a Privacy Officer responsible for overseeing our privacy compliance program.
+
+**Privacy Officer**  
+Email: <privacy@truckeasesolutions.com>
+
+For any privacy-related request, concern, complaint, or inquiry, please contact our Privacy Officer. We aim to respond to all privacy requests within applicable legal timeframes.
+
+***
+
+# 2. Information We Collect
+
+We collect information you provide directly to us, information generated through your use of our services, and information received from authorized third-party sources.
+
+## A. Information You Provide
+
+This may include:
+
+### Contact Information
+
+* Full name
+* Email address
+* Phone number
+* Mailing address
+
+### Account Information
+
+* Username
+* Password
+* Authentication credentials
+* Security questions and answers
+
+### Business Information
+
+* Company name
+* USDOT Number
+* MC Number
+* NSC or CVOR Number (where applicable)
+* Fleet size
+* Operating jurisdictions
+
+### Payment Information
+
+* Billing information
+* Subscription details
+* Payment confirmations
+
+*TruckEase does not store full credit card numbers. Payments are processed by authorized third-party payment processors.*
+
+***
+
+## B. Fleet and Compliance Information
+
+To provide compliance tracking services, we may collect:
+
+### Vehicle Information
+
+* Vehicle Identification Numbers (VINs)
+* License plate information
+* Vehicle make, model, and year
+
+### Driver Information
+
+* Driver names
+* Driver licensing information
+* CDL details
+* Compliance-related dates and records
+
+### Compliance Documentation
+
+* Insurance documentation
+* Maintenance records
+* Registration information
+* Permit and renewal dates
+* Safety and regulatory records
+* Hours-of-service records
+* Drug and alcohol program documentation
+* Other compliance-related records voluntarily submitted by users
+
+***
+
+## C. Automatically Collected Information
+
+When you visit our website or use our platform, we may automatically collect:
+
+* IP address
+* Browser type
+* Device identifiers
+* Operating system
+* Pages viewed
+* Time spent on pages
+* Referral URLs
+* Usage patterns and interactions
+* Cookies and similar technologies
+
+***
+
+## D. Information from Third Parties
+
+We may receive information from:
+
+* FMCSA public databases
+* Government compliance databases
+* Integration partners
+* Payment processors
+* Third-party verification providers
+
+Information obtained from these sources is used only to provide or improve our services.
+
+***
+
+# 3. How We Use Information
+
+We use collected information for the following purposes:
+
+## Service Delivery
+
+* Providing compliance tracking tools
+* Managing customer accounts
+* Delivering platform functionality
+* Organizing compliance documents
+
+## Communications
+
+* Sending service-related notifications
+* Delivering renewal reminders
+* Responding to support requests
+* Providing account updates
+
+## Billing and Payments
+
+* Processing subscriptions
+* Managing invoices
+* Verifying transactions
+
+## Platform Improvement
+
+* Improving website performance
+* Analyzing usage trends
+* Enhancing user experience
+* Developing new features
+
+## Security and Fraud Prevention
+
+* Protecting accounts
+* Detecting unauthorized access
+* Investigating misuse
+* Preventing fraud
+
+## Legal Compliance
+
+* Meeting regulatory obligations
+* Responding to lawful requests
+* Enforcing agreements
+
+## Marketing Communications
+
+Where legally permitted or where consent has been obtained, we may send newsletters, updates, and promotional communications.
+
+You may unsubscribe from marketing emails at any time.
+
+**We do not sell your personal information and do not use your fleet compliance data for third-party marketing purposes.**
+
+***
+
+# 4. Legal Bases for Processing
+
+Depending on your jurisdiction, we process information based on:
+
+* Performance of a contract
+* Consent
+* Legitimate business interests
+* Compliance with legal obligations
+* Protection against fraud and security threats
+
+***
+
+# 5. How We Collect Information
+
+We collect information through:
+
+* Account registration
+* Contact forms
+* Service requests
+* Document uploads
+* Customer communications
+* Website interactions
+* Cookies and analytics technologies
+* Integration partners
+* Public regulatory databases
+
+***
+
+# 6. Data Retention
+
+We retain information only as long as necessary to fulfill the purposes outlined in this Policy and to satisfy legal, regulatory, tax, accounting, or reporting requirements.
+
+Typical retention periods may include:
+
+| Data Category                   | Retention Period                          |
+| ------------------------------- | ----------------------------------------- |
+| Active Account Information      | Duration of account plus 2 years          |
+| Billing and Transaction Records | Up to 7 years                             |
+| Compliance Records              | Duration of service plus up to 5 years    |
+| Support Records                 | Up to 2 years after last interaction      |
+| Marketing Consent Records       | Up to 2 years after withdrawal of consent |
+| Analytics Data                  | Up to 26 months                           |
+
+When information is no longer required, it is securely deleted or anonymized.
+
+***
+
+# 7. How We Share Information
+
+We may share information with trusted third parties that help us operate our business.
+
+These may include:
+
+### Cloud Hosting Providers
+
+For platform hosting, storage, backup, and infrastructure.
+
+### Payment Processors
+
+For payment processing and billing.
+
+### Email and Communication Providers
+
+For notifications, reminders, and customer support communications.
+
+### Analytics Providers
+
+To understand website performance and usage trends.
+
+### Customer Support Platforms
+
+To manage support requests and customer communications.
+
+### Government or Regulatory Sources
+
+When required for compliance verification or legal obligations.
+
+All service providers are expected to protect personal information and use it only for authorized purposes.
+
+***
+
+## Legal Requirements
+
+We may disclose information when required by:
+
+* Applicable laws
+* Court orders
+* Subpoenas
+* Regulatory investigations
+* Government requests
+
+***
+
+## Business Transfers
+
+If TruckEase undergoes a merger, acquisition, restructuring, financing transaction, or sale of assets, information may be transferred as part of that transaction.
+
+Users will be notified where required by law.
+
+***
+
+# 8. International Data Transfers
+
+TruckEase may store or process information in countries outside your province, state, or country of residence, including the United States.
+
+As a result, information may become subject to the laws and lawful access requirements of those jurisdictions.
+
+To protect personal information, we implement appropriate safeguards including:
+
+* Contractual confidentiality obligations
+* Secure hosting environments
+* Encryption technologies
+* Access controls
+* Vendor due diligence procedures
+
+***
+
+# 9. Data Security
+
+TruckEase uses commercially reasonable administrative, technical, and physical safeguards to protect information.
+
+Security measures include:
+
+### Technical Safeguards
+
+* TLS/SSL encryption during transmission
+* Encryption at rest
+* Firewalls
+* Access restrictions
+* Multi-factor authentication where applicable
+* Monitoring and logging systems
+
+### Administrative Safeguards
+
+* Employee confidentiality obligations
+* Security awareness training
+* Access management procedures
+* Incident response planning
+
+### Physical Safeguards
+
+* Secure hosting facilities
+* Vendor security controls
+* Restricted access procedures
+
+While we strive to protect your information, no system can guarantee absolute security.
+
+***
+
+# 10. Data Breach Response
+
+If a security incident involving personal information occurs, TruckEase will take appropriate measures to investigate, mitigate risks, and provide notifications where required by applicable law.
+
+***
+
+# 11. Your Privacy Rights
+
+Depending on your location, you may have rights including:
+
+### Right of Access
+
+Request access to personal information we maintain about you.
+
+### Right to Correction
+
+Request correction of inaccurate information.
+
+### Right to Deletion
+
+Request deletion of personal information, subject to legal and regulatory requirements.
+
+### Right to Withdraw Consent
+
+Withdraw consent for certain processing activities.
+
+### Right to Data Portability
+
+Request a copy of personal information in a portable format where applicable.
+
+### Right to Object or Restrict Processing
+
+Object to certain forms of data processing where permitted by law.
+
+### Right to Non-Discrimination
+
+You will not be discriminated against for exercising your privacy rights.
+
+To exercise these rights, contact:
+
+**<privacy@truckeasesolutions.com>**
+
+We may require verification of your identity before responding.
+
+***
+
+# 12. Children's Privacy
+
+TruckEase services are intended exclusively for individuals who are at least 18 years of age.
+
+We do not knowingly collect personal information from anyone under 18 years of age.
+
+If we learn that information from a child has been collected, we will take appropriate steps to delete it.
+
+***
+
+# 13. Cookies and Tracking Technologies
+
+Our website uses cookies and similar technologies to:
+
+* Maintain user sessions
+* Improve website functionality
+* Analyze traffic and engagement
+* Remember user preferences
+* Support security features
+
+Types of cookies may include:
+
+* Essential Cookies
+* Analytics Cookies
+* Preference Cookies
+* Advertising Cookies (where consent is obtained)
+
+For more information, please refer to our Cookie Policy.
+
+***
+
+# 14. Automated Decision-Making
+
+TruckEase uses automated systems to provide:
+
+* Compliance reminders
+* Renewal notifications
+* Dashboard alerts
+* Tracking updates
+
+These systems are designed solely to assist users with compliance organization and do not replace the user's responsibility to satisfy regulatory requirements.
+
+***
+
+# 15. Changes to This Privacy Policy
+
+We may update this Privacy Policy periodically to reflect legal, technical, or business changes.
+
+When material changes occur, we will provide notice through our website, email, or other appropriate methods.
+
+The updated version will be identified by the revised "Last Updated" date at the top of this Privacy Policy.
+
+***
+
+# 16. Contact Us
+
+**TruckEase Solutions Inc.**
+
+Privacy Inquiries: <privacy@truckeasesolutions.com>  
+General Support: <support@truckeasesolutions.com>  
+Legal Inquiries: <legal@truckeasesolutions.com>
+
+
+
+This Privacy Policy is effective as of **April 21, 2024** and was last updated on **June 21, 2026**.
